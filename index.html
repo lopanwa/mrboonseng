@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bowling Starting</title>
+    <link rel="stylesheet" href="ICA-webdev-home.css">
+    <script>
+function clock() {
+    var time = new Date();
+    var hours = time.getHours();
+    var minutes = time.getMinutes();
+    var seconds = time.getSeconds();
+
+    document.querySelector('#currenttime').innerHTML = "Current time is: " +  harold(hours) + ":" + harold(minutes) + ":" + harold(seconds);
+
+    function harold(standIn) {
+        if (standIn < 10) {
+            standIn = '0' + standIn;
+        }
+        return standIn;
+
+    }
+}
+
+
+setInterval(clock, 1000);
+    </script>
+</head>
+<body onload="clock(); setInterval('clock()', 1000 )">
+    <header id="all">
+        <h1>Basics of Bowling</h1>
+        <header id="sticky">
+        <nav id="nav">
+            <ul>
+                <li id="special"><a href="#" class="current">Home </a></li>
+                <li><a href="ICA-webdev-hookingtheball.html">Advanced </a></li>
+                <li><a href="ICA-webdev-Balls.html">Balls </a></li>
+                <li><a href="ICA_webdev-Form.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+</header>
+    <div id="startscore"> 
+        <h2 id="start">What is 10-pin Bowling?</h2>
+    
+    <p id="bowlingdesc">Ten pin bowling is a target sport where a player rolls a <span>ball towards pins</span> and is known worldwide. The goal of ten pin bowling is to get as many pins down as possible. The bowling ball usually <span>weighs around 6-16lbs and has 2-3 holes drilled</span> into it.</p>
+    <p id="bowlingexp">10 pin bowling has its pins shaped in a cone shape. There is 10 "frames" in a game of bowling. The goal is to <span>knock down as many of them</span> in 2 shots, excluding the last frame.</p> 
+    <img src="fullrack.png" alt="" id="fullrack">
+    </div>
+    <div>
+    <h2 id="history">When did bowling become a sport?</h2>
+<p id="historyexp">On Sept 9, 1985, the <span class="backstory">American Bowling Congress (ABC)</span> was organized in New York City. Rules and equipment standards were developed, and the game as it finally was organized remained basically unchanged as the sport grew steadily. In 1904, bowling balls were still made of hard rubber balls, and automatic pin-setting machine in the early 1950s. Later in the 1970s to 1980s, <a href="ICA-webdev-Balls.html">polyester</a> and <a href="ICA-webdev-Balls.html#coverstockpara">urethane</a> is introduced and replaced the hard rubber balls.</p>
+<p id="popularised">In the 1970s, bowling had a decline in popularity, however picked up again in 2012 and continues to rise in popualrity. The amount of people that are bowling in the competitive scene has also increased, especially with the introduction of <span class="backstory">two handed bowling</span>. Some of the most well known professionals currently known on the PBA(Professional Bowlers Association) Tour are Jason Belmonte, Anthony Simonsen, EJ Tackett, Chris Via and Chris Barnes</p>
+<h2 id="belmohead">Jason Belmonte</h2>
+<img src="Belmo.jpg" alt="" id="belmo">
+<p id="bestbowler">The one said to be the <span class="backstory">best bowler</span> in the PBA Tour as of now is Jason Belmonte. He started bowling in the PBA Tour in 2008 as a <span class="backstory">two-handed bowler</span>. Although two-handed bowling was not popular at the time, in 2009, Belmonte won the Bowling Foundation Long Island Classic PBA Tour event in his PBA TV finals debut. As the second seed, he defeated Bill O'Neill, and went on to defeat number one seed Mike Fagan 215-201 for his <span class="backstory">first PBA title</span>, thus getting him the 2008-2009 <span class="backstory">Rookie of the Year</span> award. After this, he continues to win more and more titles, and has the <span class="backstory">most number of majors won</span>, at a resounding <span class="backstory">15</span>, which is 5 more than the 2nd, which only has 10 major titles won.</p>
+<p id="thegoats">Some of the most well known bowlers in the past are people like Pete Weber or Norm Duke, who recently retired in 2022 at the age of 58, and winning over 40 titles </p>
+    </div>
+    <div>
+    <h2 id="scoringsystem">The scoring system</h2>
+    <p id="scoresexp">When all the pins are knocked down in the <span>2 shots given</span>, it is a spare. When all the pins get knocked down in the <span>first shot of a frame</span>, it is considered a strike. Getting <span>2</span> strikes in a row is called a double, <span>3</span> strikes in a row is called a Turkey, while <span>4 and 5</span> strikes in a row are called four/five baggers and so forth. A <span>strike</span> is commonly marked with a <span>"X"</span> while a <span>spare</span> is marked with a <span>"/"</span>. When <span>9 or less pins</span> are hit in one frame, it is an <span>open frame</span>. Any shot taken that <span>does not hit any pins</span> is marked with a <span>"-"</span></p>
+    <p id="diffframe">The scoring system works differently for strikes, spares and open frames</p>
+    <p id="spare"><span class="ssdtf">Spare: </span> <span>10 points</span> + the number of pins you knock down for your <span>first shot</span> at the next frame.</p>
+    <p id="strike"><span  class="ssdtf">Strikes: </span> <span>10 points</span >+ the number of pins you knock down for the <span>entire next frame</span></p>
+    <p id="double"><span class="ssdtf">Double:</span>1st frame- <span>20 points</span> + the number of pins you <span>knock down in 3rd frame</span>
+        2nd frame- <span>same as scoring for strike</span></p>
+    <p id="turkey"><span class="ssdtf">Turkey: </span>1st frame-<span>30pts</span> 2nd frame- same as <span>double</span></p>
+    <p id="fourbag"><span class="ssdtf">Four-Bagger</span>1st frame- 30 points 2nd frame- 30 points</p>
+    <p id="fourbag2"><span>3rd frame</span>- same as double  <span>4th frame</span>- same as strike</p>
+        </div>
+    <div id="img">
+        <img src="https://beginnerbowlingtips.com/wp-content/uploads/2022/02/bowling-score.jpg" alt="try calculating your score!" id="bowlingscore">
+    <figcaption>try calculating the score!</figcaption>
+    
+    <p id="timing">Check if the alleys in Singapore in general are open!</p>
+
+    <p id="currenttime"></p>
+    <div id="theimg"></div>
+    <p id="openclose"></p>
+    
+    <script>
+        var currentDate = new Date();
+        var currentHour = currentDate.getHours();
+        var currentMinute = currentDate.getMinutes();
+        if (currentHour >= 10 && currentHour <= 24) {
+            var result = "Alleys are mostly open! Go and have fun!";
+            document.getElementById("openclose").textContent = result;
+            var img = document.createElement("img");
+            img.src = "open.png";
+            var src = document.getElementById("theimg");
+            src.appendChild(img);
+        } else {
+            var timediff = 10 - currentHour;
+            var timediff2 = timediff - 1;
+            var result = "Alleys are generally closed. Alleys mostly open around " + timediff2 + "-" + timediff + " from now.";
+            document.getElementById("openclose").textContent = result;
+            var img = document.createElement("img");
+            img.src = "closed.png";
+            var src = document.getElementById("theimg");
+            src.appendChild(img);
+        }
+    </script>
+</div>
+</body>
+</html>

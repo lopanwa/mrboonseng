@@ -1,0 +1,82 @@
+body {
+    background-color: #000000;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 3em;
+    color: white;
+    margin-bottom: -17px;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #585858;
+    top: 0;
+    position: sticky;
+    position: -webkit-sticky;
+    margin: 0;
+    padding: 0;
+    margin-top: 0; /* Set margin-top to 0 to extend background to the top */
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+    font-size: 1.5em;
+    margin-right: 20px;
+    border-left: 2px solid blue;
+    padding-left: 25px;
+    height: 40px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+li#special{
+    border-left: none;
+}
+a{
+    color: blue;
+}
+a.current{
+    color: #87CEEB;
+}
+a:hover{
+    color: white;
+}
+a.current:hover{
+    color: #87CEEB;
+}
+fieldset{
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    border: 3px solid rgb(237, 48, 237);
+
+}
+p{
+    text-align: center;
+    font-size: 2.4em;
+}
+div#result {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 2em;
+}
+
+/* Styling for the thank you message */
+div#thanks {
+    font-style: italic;
+    color: #69c773;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 4em;
+}
+

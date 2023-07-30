@@ -1,0 +1,118 @@
+body{
+    background-color: #000000;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-size: 3em;
+    color: white;
+    margin-bottom: -17px;
+    margin: 0;
+}
+header{
+    text-align: center;
+    background-color: #585858;
+    top: 0;
+    position: sticky;
+    position: -webkit-sticky;
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style-type: none;
+}
+li.starter{
+    display: inline-block;
+    font-size: 1.5em;
+    margin-right: 20px;
+    border-left: 2px solid blue;
+    padding-left: 25px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+li#special{
+    border-left: none;
+}
+a{
+    color: blue;
+}
+a.current{
+    color: #87CEEB;
+}
+a:hover{
+    color: white;
+}
+a.current:hover{
+    color: #87CEEB;
+}
+div{
+    text-align: center;
+    width: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1.7em;
+    clear: both;
+}
+ul#straight{
+    text-align: center;
+    width: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1.7em;
+}
+ul#hook{
+    text-align: center;
+    width: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1.7em;
+}
+span.straightheader{
+    font-weight: bold;
+    font-size: 1.2em;
+    color: rgb(237, 53, 53);
+}
+span.straightheaders{
+    font-weight: bold;
+    font-size: 1.2em;
+    color: rgb(38, 180, 38);
+}
+ul#straight{
+    float: left;
+}
+ul#hook{
+    float: right;
+}
+span.highlights{
+    font: 1.2em ;
+    color: rgb(243, 55, 243);
+    background-color: #3d3d3d;
+}
+img#ballwhee{
+    width: 290px;
+}
+p#pocketshot{
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: -8px;
+}
+dt{
+    font-weight: bold;
+    color: rgb(48, 121, 255);
+}
+dd{
+    display: list-item;
+    list-style-type:disc;
+}
+img{
+width: 400px;
+}   
+img#oilpattern{
+    width:25%;
+} 
+p.caption{
+    font-size: 0.78em;
+    margin-top: -8px;
+
+}

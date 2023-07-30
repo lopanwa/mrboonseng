@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="ICA-webdev-Form.css">
+</head>
+<body>
+    <header>
+    <nav>
+        <ul>
+            <li id="special"><a href="index.html">Home</a></li>
+            <li><a href="ICA-webdev-hookingtheball.html">Advanced</a></li>
+            <li><a href="ICA-webdev-Balls.html">Balls</a></li>
+            <li><a href="#" class="current">Feedback</a></li>
+        </ul>
+    </nav>
+    </header>
+    <p>Please give your feedback in the form below!!</p>
+    <form action="" method="get" onsubmit="event.preventDefault(); formresults();">
+        <fieldset>
+            <legend>Please give your feedback here!</legend>
+            <label for="fname">First Name: </label>
+            <input type="text" name="fname" id="fname" placeholder="First name" required>
+            <br>
+            <label for="lname">Last Name: </label>
+            <input type="text" name="lname" id="lname" placeholder="Last name" required>
+            <br>
+            <label for="email">Your email: </label>
+            <br>
+            <input type="email" name="email" id="email" placeholder="1234@gmail.com" required>
+            <br>
+            <label for="">Was this website helpful/beneficial to you?</label>
+            <br>
+            <input type="radio" name="help" id="yes" value="helpful" required>
+            <label for="yes">Yes</label>
+            <input type="radio" name="help" id="no" value="not helpful" required>
+            <label for="no">No</label>
+            <br>
+            <label for="rate">How would you rate the website from 1-5?</label>
+            <br>
+            <input type="number" name="rate" id="rate" min="1" max="5" placeholder="1-5" required>
+            <br>
+            <label for="extra">Any other feedback?</label>
+            <br>
+            <textarea name="extra" id="comments" cols="40" rows="5" placeholder="Comments / NA if none" required></textarea>
+            <br>
+            <button type="submit">Submit</button>
+            <input type="reset">
+        </fieldset>
+    </form>
+    <div id="result"></div>
+    <div id="thanks"></div>
+    
+    <script>
+        function formresults() {
+            var first = document.getElementById("fname").value;
+            var last = document.getElementById("lname").value;
+            var email = document.getElementById("email").value;
+            var radios = document.getElementsByName("help");
+            var radioValue;
+            for (var i = 0; i < radios.length; i++) {
+                if (radios[i].checked) {
+                    radioValue = radios[i].value;
+                    break;
+                }
+            }
+            var rate = document.getElementById("rate").value;
+            var comment = document.getElementById("comments").value;
+    
+            var result = "Thank you " + first + " " + last + ", to check, your email is " + email + " and you found our website " +
+                radioValue + " and rated it " + rate + " out of 5, and made the following comment on our website: " + comment + ".";
+            
+            var thank = "Thank you for leaving feedback and have a nice day!";
+            document.getElementById("result").textContent = result;
+            document.getElementById("thanks").textContent = thank;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #000000;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 3em;
+    color: white;
+    margin-bottom: -17px;
+    margin: 0;
+}
+
+header#all {
+    text-align: center;
+    background-color: #585858;
+    top: 0;
+    position: sticky;
+    position: -webkit-sticky;
+    margin: 0;
+    padding: 0;
+}
+
+/* Separate div to make ul sticky */
+header#sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #585858;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    font-size: 1.5em;
+    margin-right: 20px;
+    border-left: 2px solid blue;
+    padding-left: 25px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+li#special{
+    border-left: none;
+}
+a{
+    color: blue;
+}
+a.current{
+    color: #87CEEB;
+}
+a:hover{
+    color: white;
+}
+a.current:hover{
+    color: #87CEEB;
+}
+div{
+    text-align: center;
+    width: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1.7em;
+}
+img#fullrack{
+    width: 400px;
+}
+img#belmo{
+    width: 300px;
+}
+span{
+    color: rgb(255, 20, 20);
+    background-color: rgb(38, 38, 38);
+    font-size: 1.2em;
+}
+img#bowlingscore{
+    width:75%;
+}
+figcaption{
+    margin-top: -9px;
+    font-size: 0.7em;
+}
+span.ssdtf{
+    color: purple;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: rgb(38, 38, 38);
+}
+span.backstory{
+    font-size: 30px;
+    background-color: rgb(38, 38, 38);
+    color: blueviolet;
+}
+p#currenttime{
+    text-align: center;
+    font-size: 2em;
+    margin-top: -20px;
+    margin-bottom: 15px;
+    font-weight: bold;
+
+}
+p#timing{
+    font-size: 2em;
+}
+p#openclose{
+    padding-bottom: 100px;
+}
+
